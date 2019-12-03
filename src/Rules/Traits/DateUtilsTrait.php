@@ -1,6 +1,6 @@
 <?php
 
-namespace Rakit\Validation\Rules\Traits;
+namespace Neko\Validation\Rules\Traits;
 
 use Exception;
 

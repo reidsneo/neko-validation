@@ -10,7 +10,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Rakit\\Validation\\": "src"
+      "Neko\\Validation\\": "src"
     }
   },
   "require": {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Rakit\Validation\Rules;
+namespace Neko\Validation\Rules;
 
-use Rakit\Validation\Rule;
+use Neko\Validation\Rule;
 
 class Email extends Rule
 {

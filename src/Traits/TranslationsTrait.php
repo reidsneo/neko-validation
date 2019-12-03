@@ -1,6 +1,6 @@
 <?php
 
-namespace Rakit\Validation\Traits;
+namespace Neko\Validation\Traits;
 
 trait TranslationsTrait
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Rakit\Validation;
+namespace Neko\Validation;
 
 class MimeTypeGuesser
 {

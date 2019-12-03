@@ -1,9 +1,9 @@
 <?php
 
-namespace Rakit\Validation\Rules\Traits;
+namespace Neko\Validation\Rules\Traits;
 
 use InvalidArgumentException;
-use Rakit\Validation\Helper;
+use Neko\Validation\Helper;
 
 trait FileTrait
 {

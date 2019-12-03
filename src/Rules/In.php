@@ -1,9 +1,9 @@
 <?php
 
-namespace Rakit\Validation\Rules;
+namespace Neko\Validation\Rules;
 
-use Rakit\Validation\Helper;
-use Rakit\Validation\Rule;
+use Neko\Validation\Helper;
+use Neko\Validation\Rule;
 
 class In extends Rule
 {
