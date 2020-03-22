@@ -167,6 +167,25 @@ class ErrorBag
         return $results;
     }
 
+
+    public function validateError (string $format = ':message', bool $dotNotation = false): array
+    {
+        $messages = $this->messages;
+        $results = [];
+        foreach ($messages as $key => $keyMessages) {
+            if ($dotNotation) {
+                $results[$key] = $this->formatMessage(array_shift($messages[$key]), $format);
+            } else {
+                Helper::arraySet($results, $key, $this->formatMessage(array_shift($messages[$key]), $format));
+            }
+        }
+        $msg="";
+        foreach ($results as $key => $val) {
+            $msg = $msg.$val." <br>";
+        }
+        return array("error"=>$results,"message"=>$msg);
+    }
+
     /**
      * Get plain array messages
      *
