@@ -27,8 +27,11 @@ class DigitsBetween extends Rule
         $max = (int) $this->parameter('max');
 
         $length = strlen((string) $value);
-
-        return ! preg_match('/[^0-9]/', $value)
-                    && $length >= $min && $length <= $max;
+        if($length >= $min && $length <= $max)
+        {
+            return true;
+        }else{
+            return false;
+        }
     }
 }

@@ -1,7 +1,5 @@
 <?php
-
 namespace Neko\Validation;
-
 class Validator
 {
     use Traits\TranslationsTrait, Traits\MessagesTrait;
@@ -83,6 +81,11 @@ class Validator
         $validation = new Validation($this, $inputs, $rules, $messages);
         $validation->setTranslations($this->getTranslations());
 
+        $validation->setMessages([
+            'required' => __('app.FORM_FIELD_ERR_REQUIRED'),
+            'digits_between' => __('app.FORM_FIELD_ERR_DIGITS_BETWEEN'),
+        ]);
+        
         return $validation;
     }
 
@@ -171,7 +174,7 @@ class Validator
      * Given $ruleName and $rule to add new validator
      *
      * @param string $ruleName
-     * @param Neko\Validation\Rule $rule
+     * @param \Neko\Validation\Rule $rule
      * @return void
      */
     public function addValidator(string $ruleName, Rule $rule)

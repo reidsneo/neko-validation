@@ -183,7 +183,7 @@ class ErrorBag
         foreach ($results as $key => $val) {
             $msg = $msg.$val." <br>";
         }
-        return array("error"=>$results,"message"=>$msg);
+        return array("error"=>$results,"message"=>$msg,"title"=> __('app.FORM_FIELD_ERR_INVALID_TITLE'));
     }
 
     /**
